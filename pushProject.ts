@@ -1,3 +1,5 @@
+import "https://deno.land/std@0.191.0/dotenv/load.ts";
+
 export async function pushProject(name: string, content: string) {
   const organizationId = Deno.env.get("ORG_ID");
   const token = Deno.env.get("ACCESS_TOKEN");
