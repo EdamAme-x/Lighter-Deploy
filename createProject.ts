@@ -20,5 +20,6 @@ export async function createProject(name: string) {
   );
 
   const project = await res.json();
-  console.log(project);
+
+  return project;
 }
